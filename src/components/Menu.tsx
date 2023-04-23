@@ -30,8 +30,8 @@ export default function Menu() {
   const getTotal = () => {
     let total = 0;
 
-    for (const item of cart) {
-      total += item.preco * item.quantity; // Multiplica o preço pelo quantidade
+    for (const item of cart) {  
+      total += item.preco * item.quantity; 
     }
 
     return total.toFixed(2);
@@ -130,7 +130,7 @@ export default function Menu() {
               Limpar Carrinho
             </button>
 
-            <Link to="/">
+            <Link to="/finalizar">
               <button className="border-2 w-44 p-1 border-milk text-white ">
                 Finalizar compra
               </button>
