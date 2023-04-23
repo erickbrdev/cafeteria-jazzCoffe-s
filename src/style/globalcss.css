@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 * {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  
 }
 
 .hero {  

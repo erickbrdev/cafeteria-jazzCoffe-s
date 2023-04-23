@@ -103,7 +103,7 @@ export const coffeeItems = [
     id: 11,
     nome: "Café Cortado",
     descricao:
-      "Um café expresso 'cortado' com um pouco de leite vaporizado, geralmente servido em uma xícara menor",
+      "Um café expresso 'cortado' com um pouco de leite vaporizado",
     imagem:
       "https://icafebr.com.br/wp-content/uploads/2021/12/diferenca-cappuccino-maquina-cafe-como-fazer-promocao-receita-expresso-quantidade-igual-de-leite-reduzir-acidez-cozido-no-vapor.jpg",
     disponivel: true,

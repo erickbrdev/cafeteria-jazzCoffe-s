@@ -1,9 +1,15 @@
-import {  } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Coffee, Confetti } from "@phosphor-icons/react";
 
 export default function Buy() {
-
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    setTimeout(() => {
+      return navigate("/");
+    }, 3000);
+  }, [navigate]);
 
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center bg-coffe">
