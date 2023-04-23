@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
     element: <Menu />
   },
   {
-    path: "finalizar_compra",
+    path: "/finalizar_compra",
     element: <Buy />
   }
 ])
