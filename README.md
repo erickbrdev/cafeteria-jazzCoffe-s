@@ -1,7 +1,6 @@
-Nome do Projeto
 Cafeteria Virtual
 
-Tecnologias Utilizadas
+Tecnologias Utilizadas -
 React
 Vite
 TypeScript
