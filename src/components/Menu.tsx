@@ -4,7 +4,7 @@ import { coffeeItems } from "../data/coffeesData";
 
 import { ShoppingCart, XCircle, Coffee } from "@phosphor-icons/react";
 import Loading from "./Loading";
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 
 export default function Menu() {
   const [cart, setCart] = useState<any>([]);
@@ -109,7 +109,9 @@ export default function Menu() {
                     <p>{`Quantidade: ${product.quantity}`}</p>{" "}
                     {/* Adiciona a quantidade do item */}
                     <div className="flex gap-3">
-                      <p>{`R$ ${Number(product.preco * product.quantity).toFixed(2)}`}</p>{" "}
+                      <p>{`R$ ${Number(
+                        product.preco * product.quantity
+                      ).toFixed(2)}`}</p>{" "}
                       <button onClick={() => removeFromCart(product)}>
                         <XCircle size={20} color="red" />
                       </button>
@@ -127,12 +129,12 @@ export default function Menu() {
             >
               Limpar Carrinho
             </button>
-            <button
-              className="border-2 w-44 p-1 border-milk text-white "
-              onClick={() => (window.location.href = "/finalizar_compra")}
-            >
-              Finalizar compra
-            </button>
+
+            <Link to="/finalizar_compra">
+              <button className="border-2 w-44 p-1 border-milk text-white ">
+                Finalizar compra
+              </button>
+            </Link>
           </div>
         </div>
       </section>
