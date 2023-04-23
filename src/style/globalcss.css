@@ -1,0 +1,43 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  scroll-behavior: smooth;
+}
+
+.hero {  
+  background-image: url("https://files.sunoresearch.com.br/n/uploads/2018/09/307f143b-coffee-2358388_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.history {
+  background-image: url("https://i.pinimg.com/originals/12/0e/03/120e03442dc1d98f8a72407cddf53d5d.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-hero {
+  background-image: url("https://gifs.eco.br/wp-content/uploads/2021/09/gifs-de-cafe-saindo-fumaca-1.gif");
+  background-position:center ;
+  background-repeat: no-repeat;
+}
+
+/* Estiliza o scrollbar para navegadores WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: .5rem; /* Largura do scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4d3726; /* Cor do preenchimento do thumb */
+  border-radius: .25rem; /* Raio de borda do thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4d3726; /* Cor do preenchimento do thumb em hover */
+}
+
+/* Estiliza o scrollbar para navegadores não-WebKit (Firefox, Edge, etc.) */
+scrollbar-width: thin; /* Largura do scrollbar */
+scrollbar-color: #4d3726 #4d3726; /* Cor do thumb e do track */
