@@ -4,7 +4,7 @@ import { coffeeItems } from "../data/coffeesData";
 
 import { ShoppingCart, XCircle, Coffee } from "@phosphor-icons/react";
 import Loading from "./Loading";
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   const [cart, setCart] = useState<any>([]);
@@ -130,7 +130,7 @@ export default function Menu() {
               Limpar Carrinho
             </button>
 
-            <Link to="/finalizar_compra">
+            <Link to="/">
               <button className="border-2 w-44 p-1 border-milk text-white ">
                 Finalizar compra
               </button>
