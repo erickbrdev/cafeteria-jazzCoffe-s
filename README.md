@@ -5,19 +5,16 @@ React
 Vite
 TypeScript
 
-Descrição
+Descrição -
 O projeto Cafeteria Virtual é uma aplicação web desenvolvida utilizando React com Vite e TypeScript. A aplicação permite aos usuários navegarem por uma seleção de cafés, adicioná-los ao carrinho de compras e finalizar o pedido. Além disso, os usuários podem visualizar detalhes dos produtos, como nome, preço, descrição e imagem.
 
-Funcionalidades
+Funcionalidades -
 
 Listagem de produtos de café disponíveis
 Adição de produtos ao carrinho de compras
 Finalização do pedido
 Visualização de detalhes de produtos
 
-Pré-requisitos
-
-Node.js (versão X.X.X) e npm (versão X.X.X) ou yarn (versão X.X.X) instalados globalmente
 Instalação
 
 Clone o repositório: git clone https://github.com/seu-usuario/nome-do-projeto.git
