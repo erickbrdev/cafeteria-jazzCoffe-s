@@ -1,0 +1,12 @@
+@media (max-width: 750px) {
+  .container-contact-mobile {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: .25rem
+  }
+
+  .text-sublime-mobile {
+  font-size:2rem}
+}

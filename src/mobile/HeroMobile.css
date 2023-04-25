@@ -1,0 +1,21 @@
+@media (max-width: 750px) {
+  .container-hero-mobile {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .container-hero-mobile h1 {
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.3rem;
+  }
+
+  .flex-none-mobile {
+    display: none;
+  }
+
+  .button-hero-mobile {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

@@ -2,6 +2,8 @@ import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Coffee, Confetti } from "@phosphor-icons/react";
 
+import "../mobile/Buy.css"
+
 export default function Buy() {
   const navigate = useNavigate();
   
@@ -12,9 +14,9 @@ export default function Buy() {
   }, [navigate]);
 
   return (
-    <div className="h-screen w-full flex flex-col items-center justify-center bg-coffe">
+    <div className="h-screen w-full flex flex-col items-center justify-center bg-coffe container-buy-mobile">
       <p className="text-bold text-3xl flex items-center justify-center">
-        Agradecemos a sua preferência! Bom café{" "}
+        Agradecemos a sua preferência! Bom café
         <Confetti weight="fill" color="#6b5841" size={30} />
       </p>
 

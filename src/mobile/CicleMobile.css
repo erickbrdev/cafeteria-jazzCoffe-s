@@ -1,0 +1,6 @@
+@media (max-width: 750px) {
+  .container-cicle-mobile {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+}

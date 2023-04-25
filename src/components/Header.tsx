@@ -5,10 +5,11 @@ import {
   WhatsappLogo,
   YoutubeLogo,
 } from "@phosphor-icons/react";
+import "../mobile/HeaderMobile.css";
 
 export default function Header() {
   return (
-    <header className="flex  items-center bg-white gap-5 justify-between p-2">
+    <header className="flex  items-center bg-white gap-5 justify-between p-2 main-header-mobile">
       <div className="flex items-center">
         <Coffee size={50} weight="fill" color="#a18262" />
         <p className="font-bold italic text-3xl text-coffe text-center">
@@ -16,7 +17,7 @@ export default function Header() {
         </p>
       </div>
 
-      <nav className="flex justify-center w-full gap-8">
+      <nav className="flex justify-center w-full gap-8 main-nav-mobile">
         <a
           href="#"
           className="flex items-center gap-3 font-semibold text-sm text-coffe hover:border-b-2 border-coffe"
@@ -39,7 +40,7 @@ export default function Header() {
           href="#cicle"
           className="flex items-center gap-3 font-semibold text-sm  text-coffe hover:border-b-2 border-coffe"
         >
-          EXCELÊNCA E SAÚDE
+          EXCELÊNCIA E SAÚDE
         </a>
       </nav>
 

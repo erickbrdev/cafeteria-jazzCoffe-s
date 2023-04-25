@@ -1,0 +1,9 @@
+@media (max-width: 1000px) {
+  .section-about-mobile img {
+    display: none;
+  }
+
+  .section-about-mobile p {
+    width: 100%
+  }
+}

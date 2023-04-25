@@ -2,10 +2,12 @@ import { Coffee } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
+import "../mobile/About.css"
+
 export default function About() {
   return (
     <main>
-      <section className="flex flex-col items-center gap-10 bg-coffe">
+      <section className="flex flex-col items-center gap-10 bg-coffe section-about-mobile">
         <h1 className="flex justify-center items-center gap-2 text-[3rem] italic border-y-2 border-white  w-full h-[15rem] history font-semibold text-coffe">
           <Coffee />
           Jazz Coffee's

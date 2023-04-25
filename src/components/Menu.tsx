@@ -6,6 +6,8 @@ import { ShoppingCart, XCircle, Coffee } from "@phosphor-icons/react";
 import Loading from "./Loading";
 import { Link } from "react-router-dom";
 
+import "../mobile/MenuMobile.css"
+
 export default function Menu() {
   const [cart, setCart] = useState<any>([]);
 
@@ -43,18 +45,18 @@ export default function Menu() {
   };
 
   return (
-    <section className="flex flex-col items-center bg-coffe">
-      <Link
+    <section className="flex flex-col items-center bg-coffe mobile-section-products">
+      <Link 
         to="/"
-        className="text-2xl h-20 bg-milk w-full flex justify-center items-center border-y-2 gap-2"
+        className="text-2xl h-20 bg-milk w-full flex justify-center items-center border-y-2 gap-2 header-menu-mobile"
       >
-        <Coffee size={50} weight="fill" color="#a18262" />
+        <Coffee size={50} weight="fill" color="#a18262" className="icon-mobile" />
         <p className="font-bold italic text-3xl text-coffe text-center">
           Jazz Coffee's
         </p>
       </Link>
 
-      <section className="flex">
+      <section className="flex section-products-mobile">
         <div className="flex flex-wrap justify-evenly items-start p-2 w-4/6">
           {coffeeItems.map((item, index: number) => {
             return (
@@ -69,12 +71,12 @@ export default function Menu() {
                 />
 
                 <div className="p-2 flex flex-col gap-3">
-                  <p className="border-b-2">{item.nome}</p>
+                  <p className="border-b-2 size-price-mobile">{item.nome}</p>
                   <p className="h-16">{item.descricao}</p>
                 </div>
 
                 <div className="flex w-full items-center justify-center gap-2 mt-1">
-                  <p>{`R$ ${Number(item.preco).toFixed(2)}`}</p>
+                  <p className="size-price-mobile">{`R$ ${Number(item.preco).toFixed(2)}`}</p>
                   <button onClick={() => addToCart(item)}>
                     <ShoppingCart
                       size={35}
@@ -90,10 +92,10 @@ export default function Menu() {
         </div>
 
         <div>
-          <h1 className="text-[2rem] text-cappuccino border-b-2 font-semibold">
+          <h1 className="text-[2rem] text-cappuccino border-b-2 font-semibold title-carshop-mobile">
             Carrinho de compras
           </h1>
-          <div className="grid grid-cols-2 gap-10 flex-wrap p-">
+          <div className="grid grid-cols-2 gap-10 flex-wrap section-carrinho-mobile">
             {!cart || cart.length === 0 ? (
               <Loading />
             ) : (
@@ -105,11 +107,11 @@ export default function Menu() {
                       alt={product.name}
                       className="w-20 h-20 rounded-full mt-1"
                     />
-                    <p>{product.nome}</p>
-                    <p>{`Quantidade: ${product.quantity}`}</p>{" "}
+                    <p className="size-price-mobile">{product.nome}</p>
+                    <p className="size-price-mobile">{`Quantidade: ${product.quantity}`}</p>{" "}
                     {/* Adiciona a quantidade do item */}
                     <div className="flex gap-3">
-                      <p>{`R$ ${Number(
+                      <p className="size-price-mobile">{`R$ ${Number(
                         product.preco * product.quantity
                       ).toFixed(2)}`}</p>{" "}
                       <button onClick={() => removeFromCart(product)}>
@@ -122,7 +124,7 @@ export default function Menu() {
             )}
           </div>
           <p className="text-xl font-semibold mt-4">Total: R$ {getTotal()}</p>
-          <div className="flex gap-3">
+          <div className="flex gap-3 container-buttons-shopcart-mobile">
             <button
               className="border-2 w-44 p-1 border-milk text-white "
               onClick={() => setCart([])}

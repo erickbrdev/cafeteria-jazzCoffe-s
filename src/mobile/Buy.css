@@ -1,0 +1,12 @@
+@media (max-width: 650px) {
+  .container-buy-mobile {
+    display: flex;
+  }
+
+  .container-buy-mobile p {
+    display: flex;
+    flex-flow: column wrap;    
+    text-align: center;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,47 @@
+@media (max-width: 650px) {
+  .mobile-section-products {
+  }
+
+  .header-menu-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-mobile {
+    margin-top: 0.5rem;
+  }
+
+  .header-menu-mobile p {
+    font-size: 1.5rem;
+  }
+
+  .section-products-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-carrinho-mobile {
+    display: grid;
+    align-items: center;
+  }
+
+  .container-buttons-shopcart-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  .loader-mobile {
+    display: none;
+  }
+
+  .size-price-mobile {
+    font-size: 1.25rem;
+  }
+
+  .title-carshop-mobile {
+    font-size: 1.5rem;
+  }
+}

@@ -5,19 +5,20 @@ import {
   Envelope,
   Buildings,
 } from "@phosphor-icons/react";
+import "../mobile/ContactMobile.css";
 
 export default function Contact() {
   return (
     <section className="flex flex-col h-96 contact-hero justify-center">
-      <div className="flex items-center justify-around">
+      <div className="flex items-center justify-around container-contact-mobile">
         <div>
           <p className="font-bold text-xl text-coffe">MAIS QUE ESPECIAL</p>
-          <p className="ml-5 text-[5rem] text-coffe font-semibold">SUBLIME</p>
+          <p className="ml-5 text-[5rem] text-coffe font-semibold text-sublime-mobile">SUBLIME</p>
         </div>
 
         <div className="flex flex-col gap-5">
           <p className="font-bold flex items-center gap-2 text-white">
-            <WhatsappLogo size={30} weight="duotone" color="#25D366"  />
+            <WhatsappLogo size={30} weight="duotone" color="#25D366" />
             +55 00 00000-0000
           </p>
           <p className="font-bold flex items-center gap-2 text-white">

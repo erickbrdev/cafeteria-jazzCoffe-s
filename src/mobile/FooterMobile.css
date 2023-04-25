@@ -1,0 +1,9 @@
+@media (max-width: 750px) {
+  .footer-mobile {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .footer-mobile p {
+    font-size: .65rem;
+  }
+}
