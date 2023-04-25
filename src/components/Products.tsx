@@ -7,7 +7,7 @@ export default function Products() {
 
   return (
     <main className="relative overflow-hidden bg-coffe" id="products">
-      <section className="flex gap-10 overflow-x-auto overflow-y-hidden p-2">
+      <section className="flex gap-5 overflow-x-auto overflow-y-hidden p-2">
         {coffeeItems.map((item, index) => (
           <Card
             id={item.id}

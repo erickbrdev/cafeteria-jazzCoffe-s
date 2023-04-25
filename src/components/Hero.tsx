@@ -4,7 +4,9 @@ import "../mobile/HeroMobile.css";
 export default function Hero() {
   return (
     <div className="w-full h-[50rem] flex flex-col items-center justify-center hero gap-20 border-2 border-coffe container-hero-mobile">
-      <h1 className="text-[2rem] text-coffe">POR MAIS EXPERIÊNCIAS SUBLIMES</h1>
+      <h1 className="text-[2rem] text-coffe text-hero-mobile">
+        POR MAIS EXPERIÊNCIAS SUBLIMES
+      </h1>
 
       <div className="flex gap-5 flex-none-mobile">
         <Star size={50} weight="fill" color="#a18262" />
